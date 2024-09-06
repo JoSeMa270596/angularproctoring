@@ -1,0 +1,11 @@
+<div>
+  @if (stream) {
+  <video
+        #videoElement
+        (Loadedmetadata)="loadedeMetaData()"
+        (play)="listenerPlay()"
+        autoplay
+        [srcObject]="stream"></video>
+  }
+
+</div>
